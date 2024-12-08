@@ -29,7 +29,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_12_08_071755) do
   create_table "v_chats", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.datetime "ended_at"
-    t.string "token"
+    t.string "token", null: false
     t.datetime "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

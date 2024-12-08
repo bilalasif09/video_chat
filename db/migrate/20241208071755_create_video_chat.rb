@@ -13,7 +13,7 @@ class CreateVideoChat < ActiveRecord::Migration[7.1]
     create_table :v_chats do |t|
       t.bigint :user_id, null: false
       t.datetime :ended_at
-      t.string :token
+      t.string :token, null: false
       t.datetime :deleted_at
       t.index :user_id
       t.index :token, unique: true
